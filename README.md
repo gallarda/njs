@@ -11,7 +11,7 @@ docker run --rm -v $(pwd)/nginx.conf:/etc/nginx/nginx.conf:ro  -v $(pwd)/njs/:/e
 *Using with Visual Studio Code*
 ---
 
-After creating a new repo from this template in VS Code, you will be asked to open a devContainer.  The git client will be installed in the container when it is first created.
+After creating a new repo from this template in VS Code, you will be asked to open a devContainer.  The git and npm clients will be installed in the container when it is first created. Typescript declaration files for njs are installed to enable Intellisense and autocompletions.  See `hello.js` for an example of using the @param tag to inform VS Code about the `request` object in njs.
 
 Devcontainer will bind mount nginx.conf and the njs directory into /etc/nginx
 The official nginx OSS Docker image is used.
